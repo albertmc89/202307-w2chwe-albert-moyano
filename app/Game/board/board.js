@@ -11,7 +11,6 @@ class Board {
 
     for (let row = 0; row < board.length; row++) {
       board[row] = new Array(this.columns);
-
       for (let cellPosition = 0; cellPosition < board.length; cellPosition++) {
         board[row][cellPosition] = new Cell();
         const newCell = new Cell();
@@ -22,5 +21,4 @@ class Board {
     return board;
   }
 }
-
 export default Board;
