@@ -5,7 +5,7 @@ const cell = new Cell();
 cell.revive();
 
 const board = new Board(5, 5);
-board.generateboard();
+board.generateBoard();
 
 console.log(cell);
-console.log(board.generateboard());
+console.log(board.generateBoard());
