@@ -1,8 +1,8 @@
 class Cell {
   isAlive = false;
 
-  constructor(isAlive) {
-    this.isAlive = isAlive;
+  constructor() {
+    this.isAlive = Math.random() < 0.25;
   }
 
   revive() {
