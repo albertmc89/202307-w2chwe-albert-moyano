@@ -1,16 +1,22 @@
-const board = (rows) => {
-  const board = new Array(rows);
-  for (let row = 0; row < board.length; row++) {
-    board[row] = [];
-
-    for (let cellPosition = 0; cellPosition < board.length; cellPosition++) {
-      board[row][cellPosition] = Math.random() < 0.25;
-    }
+class Board {
+  constructor(rows, columns) {
+    this.rows = rows;
+    this.columns = columns;
   }
 
-  return board;
-};
+  generateBoard() {
+    const board = new Array(this.rows);
 
-console.log(board(5));
+    for (let row = 0; row < board.length; row++) {
+      board[row] = new Array(this.columns);
 
-export default board;
+      for (let cellPosition = 0; cellPosition < board.length; cellPosition++) {
+        board[row][cellPosition] = Math.random() < 0.25;
+      }
+    }
+
+    return board;
+  }
+}
+
+export default Board;
