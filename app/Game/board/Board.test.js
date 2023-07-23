@@ -1,4 +1,4 @@
-import Board from "./Board.js";
+import Board from "./Board";
 
 describe("Given a board class", () => {
   describe("When it receives a number of rows and columns", () => {
